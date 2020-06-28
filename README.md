@@ -8,49 +8,30 @@ Created an Amazon-like storefront with MySQL, Javascript and Node.js. The app ta
 
 
 ## How To Use
-+ `concert-this artist-name` - finds upcoming event for artist (if one exists)
-+ `spotify-this-song song-name` - finds artist & album info for a song, as well as Spotify links
-+ `movie-this movie-name` - finds plot summary, main actors, languages, ratings & location for a movie
-+ `do-what-it-says` - pulls spotify data for a song in a random text file (boy band song chosen by instructor!)
+On startup, bAmazon displays all available products, with price and available inventory.
+It will ask what product you would like to purchase. Type in product name.
+It will then ask what quantity. Type in quantity. If you ask for more than are available, bAmazon will let you know.
+If there are enough in inventory, your purchase will be completed.
 
 
 ### Technologies Used
 * JavaScript
   * Node.js
-    * Moment.js
-    * Node-Spotify-API
-    * Axios
-    * DotEnv
+    * Inquirer Packet
 
-* APIs
-  * Spotify
-  * OMDB
-  * Bands In Town
-
-
-### Summary
-+ First time creating a git-ignore file.
-+ First time creating Json packages. 
-+ First time hiding API keys in a separate file. 
-
-Used multiple Node.js modules to pull data from 3 different APIs. 
-Set defaults for concert-this (Garbage), spotify-this-song (Ace of Base 'The Sign') and movie-this (Casablanca) if no user input.
+* MySQL
 
 
 ### Screenshots Of The App In Action
-**_concert-this_** command
-![concert-this](concert-this.png)
+**_Purchase_** On startup, with a purchase and a total summary.
+![Purchase](bamazon1.jpg)
 
-**_spotify-this-song_** command
-![spotify-this-song](spotify-this-song.png)
+**_Inventory Update_** After a successful purchase, the product's inventory is updated and the store displays all items again.
+![Inventory Update](bamazon2.jpg)
 
-**_movie-this_** command
-![movie-this](movie-this.png)
-
-**_do-what-it-says_** command
-![do-what-it-says](do-what-it-says.png)
+**_Insufficient Quantity_** If customer tries to order more than available quantity, bAmazon notifies customer and returns them to the order prompt.
+![Insufficient Quantity](bamazon3.jpg)
 
 
 ### Future Enhancements
-This could be served on a website, giving more user accessibility and functionality.
-Could change parameters to produce more than one response for a movie or song name.
+This could be served on a website, giving more user accessibility and functionality. As-is, with the manager-level controls not detailed in this Read Me, this could be the framework for a small storefront.
