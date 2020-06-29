@@ -18,6 +18,7 @@ If there are enough in inventory, your purchase will be completed.
 * JavaScript
   * Node.js
     * Inquirer Packet
+    * DotEnv Packet
 
 * MySQL
 

@@ -1,3 +1,7 @@
+require("dotenv").config();
+//const password = process.env.Password
+//console.log(password)
+
 // Initializes the npm packages used
 var mysql = require("mysql");
 var inquirer = require("inquirer");
@@ -11,7 +15,8 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "Ter@b1thi@",
+  // password: "Ter@b1thi@",
+  password: process.env.Password,
   database: "Bamazon"
 });
 
